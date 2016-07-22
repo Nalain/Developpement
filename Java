@@ -1,0 +1,81 @@
+import java.util.Scanner;
+
+public class test {
+	
+	static int addition(int a,int b){
+		return a+b;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int nbr,nbr2, nbr3=2,i=1,res2=0,choix=0,arret=1;
+		String tableau[] ={"salut", "bonjour", "hello"};
+		
+		
+		Scanner sc = new Scanner(System.in);
+		
+
+		System.out.printf ("nombre 1 ? ");
+		nbr = sc.nextInt();
+		
+		System.out.printf ("nombre 2 ? ");
+		nbr2 = sc.nextInt();
+			
+		res2 = addition (nbr,nbr2);
+		System.out.println("resultat = "+res2);
+		
+		/*
+		if (nbr > 100){
+			System.out.println ("votre chiffre est plus grand que 100");
+		}
+		else {
+			System.out.println ("votre chiffre est plus petit que 100");
+		}
+
+		while (i<9) {
+			System.out.println(i);
+			i++;
+		}
+	
+		
+		do {
+			System.out.println("compteur i = "+i);
+			i++;
+		}while (i<9);
+		
+		
+		System.out.println(nbr);
+		
+		while (nbr3 <10){
+			System.out.println("boucle infinie");
+		}
+	
+	*/
+		
+		/*
+		while (arret!=0){
+			
+			System.out.println("Rentrez zero pour l'arret");
+			arret= sc.nextInt();
+			
+			System.out.printf ("Switch quel nombre ");
+			choix= sc.nextInt();
+			
+	switch (choix){
+	
+	case 1:
+		System.out.println("choix 1");
+		break;
+	case 2:
+		System.out.println("choix 2");
+		break;
+	}
+		}
+		*/
+		while (i<10){
+		System.out.println(tableau[i]);
+		i++;
+		}
+	}
+
+}
