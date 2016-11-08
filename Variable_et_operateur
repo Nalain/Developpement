@@ -1,0 +1,74 @@
+
+public class Variable_et_operateur {
+
+	public static void main(String[] args) {
+		
+		// Les variables de type numérique
+		byte temperature;
+		temperature = 64;
+		
+		short vitesseMax;
+		vitesseMax = 32000;
+		
+		int temperatureSoleil;
+		temperatureSoleil = 15600000;
+		
+		long anneeLumiere;
+		anneeLumiere = 9460700000000000L;
+		
+		float pi;
+		pi = 3.141592653f;
+		
+		double division;
+		division = 0.333333333333333333333333333333333333333333334d;
+		
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------*/		
+		
+		// Des variables stockant un caractère
+		char caractere;
+		caractere = 'A';
+		
+		boolean question;
+		question = true;
+		
+		//Première méthode de déclaration
+		String phrase;
+		phrase = "Titi et Grosminet";
+
+		//Deuxième méthode de déclaration
+		String str = new String();
+		str = "Une autre chaîne de caractères";
+
+		//Troisième méthode de déclaration
+		String string = "Une autre chaîne";
+
+		//Quatrième méthode de déclaration
+		String chaine = new String("Et une de plus !");
+		
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------*/		
+	
+		//Les opérateurs arithmétiques
+		int nbre1, nbre2, nbre3;    //Déclaration des variables
+		nbre1 = nbre2 = nbre3 = 0;  //Initialisation
+		 
+		nbre1 = nbre1 + 1;     //nbre1 = lui-même, donc 0 + 1 => nbre1 = 1
+		nbre1 = nbre1 + 1;     //nbre1 = 1 (cf. ci-dessus), maintenant, nbre1 = 1 + 1 = 2
+		nbre2 = nbre1;         //nbre2 = nbre1 = 2
+		nbre2 = nbre2 * 2;     //nbre2 = 2 => nbre2 = 2 * 2 = 4
+		nbre3 = nbre2;         //nbre3 = nbre2 = 4
+		nbre3 = nbre3 / nbre3; //nbre3 = 4 / 4 = 1
+		nbre1 = nbre3;         //nbre1 = nbre3 = 1
+		nbre1 = nbre1 - 1;     //nbre1 = 1 - 1 = 0
+		
+		int resultat = (int)(nbre1 / nbre2);
+		System.out.println("Le résultat est = " + resultat);
+		
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------*/
+		
+		//Les conversions, ou « cast »
+		int i = 123;
+		float j = (float)i;
+
+	}
+
+}
